@@ -1,0 +1,16 @@
+[tool.poetry]
+name = "ptmk"
+version = "0.1.0"
+description = ""
+authors = [
+    "darkhan"
+]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+psycopg = {version = "^3.2", extras = ["binary"]}
+python-dotenv = "^1.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
