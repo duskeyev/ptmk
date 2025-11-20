@@ -1,0 +1,16 @@
+{
+    "name": "ptmk",
+    "image": "mcr.microsoft.com/devcontainers/python:3.12-bullseye",
+    "features": {
+        "ghcr.io/devcontainers/features/docker-in-docker:2": {}
+    },
+    "postCreateCommand": "poetry install",
+    "forwardPorts": [5432],
+    "containerEnv": {
+        "POETRY_VIRTUALENVS_IN_PROJECT": "true"
+    },
+    "dockerComposeFile": "../docker-compose.devcontainer.yml",
+    "runServices": ["postgres"],
+    "workspaceFolder": "/workspaces/ptmk"
+}
+
